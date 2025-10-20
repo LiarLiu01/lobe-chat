@@ -23,7 +23,7 @@ jobs:
       - name: Install deps
         run: bun i
 
-      - name: sync database schema to dbdocs
-        env:
-          DBDOCS_TOKEN: ${{ secrets.DBDOCS_TOKEN }}
-        run: npm run db:visualize
+      # - name: sync database schema to dbdocs
+      #   env:
+      #     DBDOCS_TOKEN: ${{ secrets.DBDOCS_TOKEN }}
+      #   run: npm run db:visualize
